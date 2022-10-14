@@ -11,11 +11,17 @@
   text-transform: capitalize;
 }
 
-$crimson: crimson;
-$black: #0d0d0d;
-$light-bg: #1a1a1a;
+$primary-color: #64DAFB;
+
+// $primary-color: crimson;
+//$black: #0d0d0d;
+$black: #20232A;
+$black-2:#010607;
+//$light-bg: #1a1a1a;
+$light-bg: #282C34;
 $white: #ffffff;
 $light-color: #aaa;
+$light-color: #6D6D6D;
 $box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 
 @mixin grid($val) {
@@ -37,7 +43,7 @@ html {
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $crimson;
+    background: $primary-color;
     border-radius: 5rem;
   }
 
@@ -59,7 +65,7 @@ html {
 
     span {
       text-transform: uppercase;
-      color: $crimson;
+      color: $primary-color;
     }
   }
 
@@ -67,9 +73,9 @@ html {
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background: $crimson;
+    background: $primary-color;
     padding: .7rem;
-    color: $white;
+    color: $black-2;
     font-size: 1.7rem;
     padding-left: 2rem;
 
@@ -79,8 +85,8 @@ html {
       line-height: 4rem;
       font-size: 1.7rem;
       text-align: center;
-      background: $white;
-      color: crimson;
+      background: $black;
+      color: $primary-color;
       border-radius: 50%;
       margin-left: 1rem;
       transition: .2s linear;
@@ -108,16 +114,17 @@ html {
       transition: .2s linear;
       
       i {
-        color: $crimson;
+        color: $primary-color;
         padding-right: .5rem;
       }
 
       &:hover {
-        background: $crimson;
+        background: $primary-color;
+        color: $black;
         padding-bottom: 4rem;
 
         i {
-          color: $white;
+          color: $black;
         }
       }
     }
@@ -153,7 +160,7 @@ html {
 
     span {
       font-size: 3rem;
-      color: $crimson;
+      color: $primary-color;
       padding: .5rem 0;
       display: block;
     }
@@ -224,7 +231,7 @@ html {
 
         h3 {
           font-size: 5rem;
-          color: $crimson;
+          color: $primary-color;
         }
 
         p {
@@ -294,7 +301,7 @@ html {
         line-height: 4.5rem;
         font-size: 1.7rem;
         border-radius: 50%;
-        background: $crimson;
+        background: $primary-color;
         color: $white;
         text-align: center;
         position: absolute;
@@ -384,7 +391,7 @@ html {
 
         a {
           font-size: 2rem;
-          color: $crimson;
+          color: $primary-color;
           
           &:hover {
             color:$white;
@@ -442,12 +449,12 @@ html {
             color: $white;
 
             &:hover {
-              color: $crimson;
+              color: $primary-color;
             }
 
             i {
               padding-right: .5rem;
-              color: $crimson;
+              color: $primary-color;
             }
           }
         }
@@ -504,7 +511,7 @@ html {
 
           i {
             font-size: 3rem;
-            color: $crimson;            
+            color: $primary-color;            
           }
 
           h3 {
@@ -528,7 +535,7 @@ html {
           margin-right: .3rem;
 
           &:hover {
-            background: $crimson;
+            background: $primary-color;
           }
         }
       }
